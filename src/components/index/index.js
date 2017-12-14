@@ -16,8 +16,6 @@ class IndexPage extends React.Component{
   render(){
     return (
       <div>
-      sadaasdads asd 
-        asdasvasvasvasffasf
       </div>
     )
   }

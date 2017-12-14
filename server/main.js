@@ -21,11 +21,8 @@ if(process.env.NODE_ENV == 'development') {
 }
 
 app.use('/', express.static(__dirname + '/../public/'));
-app.get('/main/', (req, res) => {
-  res.sendFile('main.html', { root: path.join(__dirname, '../public') });
-});
-app.get('/editor/', (req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, '../public') });;
+app.get('*', (req, res) => {
+  res.sendFile('index.html', { root: path.join(__dirname, '../public') });
 });
 
 const server = app.listen(port, () => {

@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
     entry: './src/index.js',
@@ -37,5 +38,11 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
+    resolve: {
+      modules: [
+        path.resolve(__dirname + '/src'),
+        path.resolve(__dirname + '/node_modules')
+      ]
+    }
 };

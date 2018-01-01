@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import IndexPageReducer from './IndexPage/IndexPageReducer';
+import index from './index/reducer';
 
 const reducers = combineReducers({
-  IndexPageReducer
+  index
 });
 
 export default reducers;

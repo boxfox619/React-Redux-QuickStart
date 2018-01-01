@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './Index.css';
+import styles from './style.css';
 
 import axios from 'axios';
 

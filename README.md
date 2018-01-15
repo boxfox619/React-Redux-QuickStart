@@ -1,4 +1,7 @@
 # React Redux QuickStart
 React, Redux MultiPage Quick Start project
 
-React router 적용 예정
+## Software Stacks
+- React-router (react-router-dom)
+- Redux
+- Realm
